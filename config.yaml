@@ -1,0 +1,68 @@
+# Configuration for Smartphone Price Prediction System
+
+paths:
+  raw_data: "data/raw/coa-12.csv"
+  cleaned_data: "data/processed/cleaned_smartphones.csv"
+  data_quality_report: "reports/data_quality_report.csv"
+  cleaning_summary: "reports/cleaning_summary.txt"
+  eda_figures_dir: "reports/figures"
+  model_comparison: "reports/model_comparison.csv"
+  final_test_predictions: "reports/final_test_predictions.csv"
+  final_report: "reports/final_report.md"
+  best_model: "models/best_smartphone_price_model.joblib"
+
+data_split:
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  random_state: 42
+  cv_folds: 5
+  repeated_cv_repeats: 3
+
+target: "Price_INR"
+
+features:
+  id_columns:
+    - "Phone_Model"
+  
+  redundant_or_leakage_columns:
+    - "RAM_Size_GB_Min"
+    - "Storage_GB_Min"
+    - "Processor_Core_Count"
+    - "Display_Resolution"
+    - "Frequency_of_Different_Cores"
+    - "Camera_Specifications"
+
+  selected_numerical:
+    - "RAM_Size_GB"
+    - "RAM_Size_GB_Max"
+    - "Storage_GB"
+    - "Storage_GB_Max"
+    - "Battery_Capacity_mAh"
+    - "Process_Technology_nm"
+    - "Display_Resolution_Width_px"
+    - "Display_Resolution_Height_px"
+    - "Refresh_Rate_Hz"
+    - "Processor_Core1_Count"
+    - "Processor_Core1_Frequency_GHz"
+    - "Processor_Core2_Count"
+    - "Processor_Core2_Frequency_GHz"
+    - "Processor_Core3_Count"
+    - "Processor_Core3_Frequency_GHz"
+    - "Cache_Memory_Core1"
+    - "Cache_Memory_Core2"
+    - "Cache_Memory_Core3"
+    # Derived engineered features
+    - "Max_Core_Frequency_GHz"
+    - "Weighted_Average_Frequency_GHz"
+    - "Total_Display_Pixels"
+    - "Display_Aspect_Ratio"
+    - "Rear_Camera_MP"
+    - "Num_CPU_Clusters"
+
+  selected_categorical:
+    - "Phone_Company"
+    - "RAM_Type"
+    - "ISA"
+    - "Display_Tech_Category"
+
