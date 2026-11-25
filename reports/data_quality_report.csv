@@ -1,0 +1,31 @@
+Column_Name,Data_Type,Missing_Count,Missing_Percentage,Unique_Values,Zero_Count,Min_Value,Max_Value,Sample_Value,Quality_Note
+Phone_Company,str,0,0.0,11,0,,,Xiaomi Redmi,OK
+Phone_Model,str,0,0.0,91,0,,,Xiaomi Redmi 13 5G,OK
+SoC,str,0,0.0,57,0,,,Qualcomm SM4450 Snapdragon 4 Gen 2 AE...,OK
+Processor_Core_Count,int64,0,0.0,1,0,8.0,8.0,8,Constant across all records (value=8)
+Processor_Core1,str,0,0.0,17,0,,,Cortex-A78,OK
+Processor_Core1_Count,int64,0,0.0,3,0,1.0,4.0,2,OK
+Processor_Core1_Frequency_GHz,float64,0,0.0,24,0,1.5,4.6,2.3,OK
+Processor_Core2,str,0,0.0,14,0,,,Cortex-A55,OK
+Processor_Core2_Count,int64,0,0.0,5,0,1.0,6.0,6,OK
+Processor_Core2_Frequency_GHz,float64,0,0.0,20,0,1.0,3.62,1.95,OK
+Processor_Core3,str,0,0.0,7,0,,,Not Applicable,OK
+Processor_Core3_Count,int64,0,0.0,5,65,0.0,6.0,0,Structural zeros: 65 (2-cluster architectures)
+Processor_Core3_Frequency_GHz,float64,0,0.0,6,65,0.0,2.4,0.0,Structural zeros: 65 (2-cluster architectures)
+RAM_Type,str,0,0.0,4,0,,,LPDDR4X,OK
+RAM_Size_GB,int64,0,0.0,7,0,2.0,16.0,6,OK
+Cache_Memory_Core1,int64,0,0.0,7,0,128.0,12288.0,512,OK
+Cache_Memory_Core2,int64,0,0.0,5,0,128.0,12288.0,128,OK
+Cache_Memory_Core3,int64,0,0.0,5,65,0.0,1024.0,0,Structural zeros: 65 (2-cluster architectures)
+Storage_GB,int64,0,0.0,6,0,16.0,512.0,128,OK
+Battery_Capacity_mAh,int64,0,0.0,28,0,2990.0,8580.0,5030,OK
+ISA,str,0,0.0,4,0,,,Armv8.2-A,OK
+Frequency_of_Different_Cores,str,0,0.0,56,0,,,2x2.3 GHz Cortex-A78; 6x1.95 GHz Cort...,OK
+Process_Technology_nm,int64,0,0.0,9,0,3.0,28.0,4,OK
+Display_Type,str,0,0.0,72,0,,,"IPS LCD, 90Hz, 550 nits (HBM)",OK
+Display_Resolution,str,0,0.0,50,0,,,1080 x 2460 pixels (~396 ppi density),OK
+Display_Resolution_Width_px,int64,0,0.0,11,0,720.0,1440.0,1080,OK
+Display_Resolution_Height_px,int64,0,0.0,27,0,1440.0,3216.0,2460,OK
+Refresh_Rate_Hz,int64,0,0.0,6,0,60.0,185.0,90,OK
+Camera_Specifications,str,0,0.0,84,0,,,"Rear: 108 MP, f/1.8, (wide), 0.64µm, ...",OK
+Price_INR,int64,0,0.0,50,0,7550.0,75494.0,18875,OK
